@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "587968837537",
+    "project_id": "whatzap2-87ec8",
+    "storage_bucket": "whatzap2-87ec8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587968837537:android:a45b5093984dc75839fde0",
+        "android_client_info": {
+          "package_name": "com.example.whatzap2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587968837537-htne5o4s5ls5piav3rol0iidlt9lenp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5e1sYurf-bszNNPOqAskZ1C-YNZIsloE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587968837537-htne5o4s5ls5piav3rol0iidlt9lenp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
