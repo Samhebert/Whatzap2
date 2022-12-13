@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:whatzap2/Cadastro.dart';
 class Login extends StatefulWidget {
   @override
   _LoginState createState() => _LoginState();
@@ -71,7 +71,11 @@ class _LoginState extends State<Login> {
                                 color: Colors.white
                               )
                             ),
-                              onTap: (){}
+                              onTap: (){
+                                Navigator.push(context, MaterialPageRoute(
+                                  builder: (context) => Cadastro()
+                                ));
+                              }
                             )
                           )
             ])))));
