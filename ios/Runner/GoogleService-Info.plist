@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>587968837537-96sfq6ovmbi4depuhnsa0qqtq35tenea.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.587968837537-96sfq6ovmbi4depuhnsa0qqtq35tenea</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCPrzt3OeI7pIyl7vLV3riEIALf1unPDUc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>587968837537</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.whatzap2</string>
+	<key>PROJECT_ID</key>
+	<string>whatzap2-87ec8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>whatzap2-87ec8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:587968837537:ios:95062ece27de1c2b39fde0</string>
+	<key>DATABASE_URL</key>
+	<string>https://whatzap2-87ec8-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
