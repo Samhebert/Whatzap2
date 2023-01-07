@@ -4,12 +4,11 @@ import 'Home.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'firebase_options.dart';
 
-
 import 'Login.dart';
 
-void  main() async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await  Firebase.initializeApp(
+  await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
   runApp(MaterialApp(

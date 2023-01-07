@@ -52,6 +52,21 @@ class _LoginState extends State<Login> {
     });
   }
 
+Future _verificarUsuarioLogado()async{
+
+FirebaseAuth auth = FirebaseAuth.instance;
+
+//auth.signOut();
+if (FirebaseAuth.instance.currentUser!.email! != null){
+Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home()));
+}
+}
+
+@override
+void initState(){
+  _verificarUsuarioLogado();
+  super.initState();
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
