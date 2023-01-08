@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:whatzap2/Telas/AbaContatos.dart';
 import 'package:whatzap2/Telas/abaConversas.dart';
 
+import 'Login.dart';
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -22,9 +24,23 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
 
   _escolhaMenuItem(String itemEscolhido){
 
-    return "Item Escolhido :" + itemEscolhido;
+    switch(itemEscolhido) {
+      case "Configuracoes":
+      print("Configuracoes");
+      break;
+      case "Deslogar":
+        _deslogarusuario();
+        break;
+    };
   }
 
+  _deslogarusuario() async{
+
+    FirebaseAuth auth = FirebaseAuth.instance;
+    await auth.signOut();
+
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+  }
   @override
   void initState() {
     super.initState();
