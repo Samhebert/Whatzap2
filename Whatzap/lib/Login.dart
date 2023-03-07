@@ -66,6 +66,9 @@ class _LoginState extends State<Login> {
     //auth.signOut();
 
     if (FirebaseAuth.instance.currentUser!.email! != null) {
+
+      Navigator.pushNamed(context, '/home');
+
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => Home()));
     }
