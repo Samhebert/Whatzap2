@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:whatzap/RouteGenerator.dart';
 import 'Home.dart';
 import 'Login.dart';
 import 'firebase_options.dart';
@@ -16,9 +17,7 @@ Future<void> main() async {
     theme: ThemeData(
         primaryColor: Color(0xff075E54), accentColor: Color(0xff25D366)),
     initialRoute: '/',
-    onGenerateRoute: (RouteSettings settings){
-
-    },
+    onGenerateRoute: RouteGeneretor.generateRoute,
     debugShowCheckedModeBanner: false,
   ));
 }
