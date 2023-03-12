@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/scheduler.dart';
 import 'Cadastro.dart';
 import 'Home.dart';
 import 'model/Usuario.dart';
@@ -11,9 +12,9 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   TextEditingController _controllerEmail =
-      TextEditingController(text: "samuel@gmail.com");
+  TextEditingController(text: "");
   TextEditingController _controllerSenha =
-      TextEditingController(text: "12345678");
+  TextEditingController(text: "");
   String _mensagemErro = "";
 
   _validarCampos() {
@@ -49,14 +50,13 @@ class _LoginState extends State<Login> {
 
     auth
         .signInWithEmailAndPassword(
-            email: usuario.email, password: usuario.senha)
+        email: usuario.email, password: usuario.senha)
         .then((firebaseUser) {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => Home()));
+      Navigator.pushReplacementNamed(context, '/home');
     }).catchError((error) {
       setState(() {
         _mensagemErro =
-            "Erro ao autenticar usuário, verifique e-mail e senha e tente novamente!";
+        "Erro ao autenticar usuário, verifique e-mail e senha e tente novamente!";
       });
     });
   }
@@ -67,10 +67,12 @@ class _LoginState extends State<Login> {
 
     if (FirebaseAuth.instance.currentUser!.email! != null) {
 
-      Navigator.pushNamed(context, '/home');
+      SchedulerBinding.instance.addPostFrameCallback((_) {
+        Navigator.pushReplacementNamed(context, '/home');
+      }
 
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => Home()));
+
+    );
     }
   }
 
@@ -132,10 +134,10 @@ class _LoginState extends State<Login> {
                   padding: EdgeInsets.only(top: 16, bottom: 10),
                   child: ElevatedButton(
                     child:
-                        Text("Entrar", style: TextStyle(color: Colors.white)),
+                    Text("Entrar", style: TextStyle(color: Colors.white)),
                     style: ButtonStyle(
                         shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                        MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(32.0),
                           ),
@@ -173,3 +175,4 @@ class _LoginState extends State<Login> {
     );
   }
 }
+
