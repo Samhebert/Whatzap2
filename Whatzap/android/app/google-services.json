@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "305977578392",
-    "project_id": "whatzap-48a4c",
-    "storage_bucket": "whatzap-48a4c.appspot.com"
+    "project_number": "294581695245",
+    "project_id": "whatzapp-11135",
+    "storage_bucket": "whatzapp-11135.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:305977578392:android:ebe046e74523ae3cc951ed",
+        "mobilesdk_app_id": "1:294581695245:android:5bf6216841b2aa9cab7644",
         "android_client_info": {
           "package_name": "com.example.whatzap"
         }
       },
       "oauth_client": [
         {
-          "client_id": "305977578392-0gdtk7emjcoc26ith23pjbu30cgrhbe2.apps.googleusercontent.com",
+          "client_id": "294581695245-p2tnadpn0547c3vbp39k9toka7u09tc8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyArfKDFTRJ4GlURZDgVKpvRGDYrjWD8HAc"
+          "current_key": "AIzaSyCklXNjcznZvemS10zPHM_h1vD7-IOrlTI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "305977578392-0gdtk7emjcoc26ith23pjbu30cgrhbe2.apps.googleusercontent.com",
+              "client_id": "294581695245-p2tnadpn0547c3vbp39k9toka7u09tc8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

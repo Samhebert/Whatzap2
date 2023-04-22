@@ -67,7 +67,7 @@ class _CadastroState extends State<Cadastro> {
       FirebaseFirestore db = FirebaseFirestore.instance;
 
       db
-          .collection("Usuarios")
+          .collection("usuarios")
           .doc(firebaseUser.user!.uid)
           .set(usuario.toMap());
 
@@ -165,6 +165,7 @@ class _CadastroState extends State<Cadastro> {
                     },
                   ),
                 ),
+
                 Center(
                   child: Text(
                     _mensagemErro,
